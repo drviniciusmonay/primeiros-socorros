@@ -153,6 +153,11 @@ h3{font-size:20px;line-height:1.2;font-weight:800}
 .bottle .x{width:56px;height:56px;border-radius:50%;background:var(--red);display:grid;place-items:center;color:var(--on-red)}
 .bottle p{font-size:16.5px}
 .bottle strong{display:block;font-family:var(--display);font-stretch:118%;font-size:21px;line-height:1.15;color:var(--red-ink);margin-bottom:4px}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+.fact b{display:block;font-family:var(--display);font-stretch:118%;font-weight:850;font-size:17px;line-height:1.15;color:var(--red-ink);margin-bottom:6px}
+.fact p{font-size:14.5px;line-height:1.45;color:var(--ink2)}
+@media (max-width:380px){.facts{grid-template-columns:1fr}}
 .cite{border-left:3px solid var(--ink);padding:4px 0 4px 16px;font-size:16px}
 .cite small{display:block;margin-top:6px;font-size:13px;color:var(--ink2)}
 
@@ -319,16 +324,21 @@ footer p+p{margin-top:8px}
 
 <section>
   <div class="w">
-    <span class="tag">O mito mais perigoso</span>
-    <h2 style="margin-top:12px">A dica mais famosa da internet está errada</h2>
+    <span class="tag">O mito do momento</span>
+    <h2 style="margin-top:12px">"Dá carvão ativado que resolve." Não resolve.</h2>
     <div class="myth">
       <div class="bottle">
         <div class="x"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
-        <p><strong>"Deu água oxigenada para ele vomitar."</strong>Ela provoca vômito porque lesa a parede do estômago e do esôfago. Em gatos é ainda mais perigosa. E vomitar pode piorar muito quando o produto é cáustico ou derivado de petróleo.</p>
+        <p><strong>"Comeu algo estranho? Dá carvão ativado."</strong>É a "solução" caseira mais compartilhada hoje. Só que o carvão ativado não é antídoto para qualquer coisa, e na maioria das vezes, em casa, ele não faz o que promete.</p>
       </div>
-      <p class="lead">Em agosto de 2026, especialistas em emergência veterinária publicaram as <b style="color:var(--ink)">primeiras diretrizes baseadas em evidências de primeiros socorros para cães e gatos</b>. Uma das recomendações é direta:</p>
-      <div class="cite">Recomendação forte contra induzir o vômito em casa, de rotina, depois da ingestão de um tóxico. Água oxigenada e xarope de ipeca não são recomendados. O animal deve ser levado ao atendimento imediatamente.<small>RECOVER Guidelines: First Aid for Dogs and Cats. Journal of Veterinary Emergency and Critical Care, 2026.</small></div>
-      <p class="lead">Esse é só um exemplo. O guia foi escrito a partir dessas diretrizes, para você parar de depender de "dica" na hora em que não pode errar.</p>
+      <div class="facts">
+        <div class="fact"><b>Não segura</b><p>xilitol, álcool, fluido de radiador, ferro, chumbo, sal, produtos cáusticos e derivados de petróleo.</p></div>
+        <div class="fact"><b>Dezenas de cápsulas</b><p>é o que um cão de 10 kg precisaria. O veterinário usa de 1 a 5 gramas por quilo. A dose caseira quase nunca chega perto.</p></div>
+        <div class="fact"><b>Pode ir para o pulmão</b><p>se o animal estiver sonolento, engasgar ou vomitar. Em filhotes, também pode desregular o sódio do sangue.</p></div>
+        <div class="fact"><b>Atrasa o que importa</b><p>A falsa sensação de "já fiz alguma coisa" segura o tutor em casa no tempo em que o tratamento faria diferença.</p></div>
+      </div>
+      <div class="cite">No hospital, o carvão ativado é uma ferramenta útil em casos selecionados, decidida pelo veterinário conforme o tóxico, a quantidade e o horário. Para o tutor, as diretrizes RECOVER 2026 de primeiros socorros são claras: levar o animal ao atendimento imediatamente.<small>MSPCA-Angell, Activated Charcoal (recursos clínicos); RECOVER Guidelines: First Aid for Dogs and Cats, Journal of Veterinary Emergency and Critical Care, 2026.</small></div>
+      <p class="lead">O mesmo vale para leite, azeite e outras receitas caseiras. O guia mostra o que fazer de verdade em cada intoxicação, e o que nunca fazer.</p>
     </div>
   </div>
 </section>
@@ -428,7 +438,7 @@ footer p+p{margin-top:8px}
     <div class="vs">
       <div class="col no"><h3>Sem preparo</h3><ul>
         <li>Você procura no Google com as mãos tremendo</li>
-        <li>Dá água oxigenada porque "todo mundo faz"</li>
+        <li>Dá carvão ativado "para puxar o veneno"</li>
         <li>Coloca a mão na boca do pet em convulsão</li>
         <li>Espera o sintoma aparecer para ir ao veterinário</li>
         <li>Não sabe qual clínica está aberta de madrugada</li>
@@ -464,7 +474,7 @@ footer p+p{margin-top:8px}
       <div class="ticket-body">
         <h3>Guia Prático de Primeiros Socorros para Cães e Gatos</h3>
         <ul class="inc">
-          <li><span><b>Guia completo no formato de celular:</b> 89 telas, 13 partes, ilustrações das manobras e sumário clicável</span></li>
+          <li><span><b>Guia completo no formato de celular:</b> 90 telas, 13 partes, ilustrações das manobras e sumário clicável</span></li>
           <li><span><b>Kit de 12 cartões de emergência</b> em PDF para imprimir: semáforo, RCP, engasgo, intoxicação, plantas e mais</span></li>
           <li><span><b>Mais de 50 situações</b>, com sinais, passo a passo e o que não fazer</span></li>
           <li><span>Baseado nas <b>diretrizes RECOVER 2026</b> de primeiros socorros e <b>2024</b> de RCP</span></li>
