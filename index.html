@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guia Prático de Primeiros Socorros para Cães e Gatos</title>
+<meta name="description" content="Primeiros socorros para cães e gatos, passo a passo: engasgo, intoxicação, convulsão, golpe de calor, RCP e mais de 50 situações. Guia feito por veterinário, baseado nas diretrizes RECOVER 2026. Guia + kit de cartões por R$ 29,90.">
+<meta name="keywords" content="primeiros socorros cães, primeiros socorros gatos, cachorro engasgado o que fazer, cachorro envenenado o que fazer, gato intoxicado, convulsão em cachorro, golpe de calor cachorro, RCP em cachorro, manobra de desengasgo cachorro">
+<link rel="canonical" href="https://drviniciusmonay.github.io/primeiros-socorros/">
+<meta property="og:title" content="Guia Prático de Primeiros Socorros para Cães e Gatos">
+<meta property="og:description" content="Nos primeiros minutos de uma emergência, quem está com o seu pet é você. Saiba exatamente o que fazer.">
+<meta property="og:image" content="https://drviniciusmonay.github.io/primeiros-socorros/img/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://drviniciusmonay.github.io/primeiros-socorros/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#142029">
+<!-- PIXEL: cole aqui o código do Meta Pixel / Google Analytics, se for usar -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: ficha de triagem. Coluna única de leitura (máx. 720px), faixas de ponta a ponta, carimbos de horário em fonte de monitor. Mobile first. */
+:root{
+  --bg:#F3F5F6; --surface:#FFFFFF; --ink:#142029; --ink2:#4D5B67; --line:#DAE0E4;
+  --red:#D2382C; --red-ink:#B32A20; --red-soft:#FBE5E2;
+  --amber:#D9831A; --amber-soft:#FCEFDC; --green:#22865A; --green-soft:#E2F3EA;
+  --panel:#142029; --panel-ink:#EEF2F4; --panel-ink2:#A9B6C0; --panel-line:#2A3946;
+  --on-red:#FFFFFF;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --text:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E151B; --surface:#16202A; --ink:#E8EDF0; --ink2:#9EABB6; --line:#26333E;
+  --red:#EE5446; --red-ink:#FF8A7E; --red-soft:#3A1A17;
+  --amber:#EFA040; --amber-soft:#36270F; --green:#3BB07E; --green-soft:#11291E;
+  --panel:#090E13; --panel-ink:#EEF2F4; --panel-ink2:#A9B6C0; --panel-line:#22303B;
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#0E151B; --surface:#16202A; --ink:#E8EDF0; --ink2:#9EABB6; --line:#26333E;
+  --red:#EE5446; --red-ink:#FF8A7E; --red-soft:#3A1A17;
+  --amber:#EFA040; --amber-soft:#36270F; --green:#3BB07E; --green-soft:#11291E;
+  --panel:#090E13; --panel-ink:#EEF2F4; --panel-ink2:#A9B6C0; --panel-line:#22303B;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;font-stretch:118%}
+p{margin:0}
+a{color:inherit}
+b,strong{font-weight:700}
+.w{max-width:720px;margin:0 auto;padding-inline:20px}
+section{padding-block:64px}
+.stack{display:flex;flex-direction:column;gap:16px}
+.tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red-ink)}
+.tag::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--red)}
+h2{font-size:clamp(28px,6.4vw,40px);line-height:1.08;font-weight:850;letter-spacing:-.01em}
+h3{font-size:20px;line-height:1.2;font-weight:800}
+.lead{font-size:18.5px;color:var(--ink2)}
+.muted{color:var(--ink2)}
+.small{font-size:14px;color:var(--ink2)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+
+/* botões */
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:60px;padding:14px 22px;border-radius:14px;background:var(--red);color:var(--on-red);text-decoration:none;font-family:var(--display);font-stretch:112%;font-weight:850;font-size:19px;letter-spacing:.01em;box-shadow:0 6px 0 var(--red-ink);transition:transform .12s, box-shadow .12s;border:0;cursor:pointer}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 var(--red-ink)}
+.btn svg{flex:none}
+.trust{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin-top:14px;font-size:13.5px;color:var(--ink2)}
+.trust span{display:inline-flex;align-items:center;gap:6px}
+
+/* HERO */
+.hero{padding-block:28px 48px;background:var(--surface);border-bottom:1px solid var(--line);overflow:hidden;position:relative}
+.topline{display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:var(--mono);font-size:11.5px;color:var(--ink2);letter-spacing:.04em;text-transform:uppercase;margin-bottom:26px}
+.topline>span:last-child{text-align:right}
+@media (max-width:560px){.topline>span:last-child{display:none}}
+.live{display:inline-flex;align-items:center;gap:7px;color:var(--red-ink);font-weight:700}
+.live i{width:8px;height:8px;border-radius:50%;background:var(--red);animation:blink 1.2s infinite}
+@keyframes blink{50%{opacity:.25}}
+.hero-grid{display:grid;gap:28px}
+.hero h1{font-size:clamp(36px,9.4vw,62px);line-height:.98;font-weight:900;letter-spacing:-.02em;font-stretch:122%}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero .sub{margin-top:18px;font-size:18.5px;color:var(--ink2);max-width:36ch}
+.hero .sub b{color:var(--ink)}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.badge{font-size:13px;font-weight:600;border:1.5px solid var(--line);border-radius:999px;padding:5px 12px;background:var(--bg)}
+.ecg{width:100%;height:64px;margin:26px 0 22px;color:var(--red)}
+.ecg .base{stroke:var(--line)}
+.ecg .beat{stroke:var(--red);stroke-dasharray:120 900;animation:trace 2.6s linear infinite}
+@keyframes trace{from{stroke-dashoffset:120}to{stroke-dashoffset:-900}}
+.phone{justify-self:center;width:min(250px,70vw);aspect-ratio:9/16.5;border-radius:34px;background:var(--panel);padding:10px;box-shadow:0 30px 60px -20px rgba(20,32,41,.45);transform:rotate(3deg);position:relative}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:26px}
+.phone::after{content:"";position:absolute;top:16px;left:50%;width:70px;height:6px;margin-left:-35px;border-radius:9px;background:var(--panel)}
+.stamp{position:absolute;left:-18px;bottom:30px;background:var(--surface);color:var(--ink);border:2px solid var(--ink);border-radius:10px;padding:8px 12px;font-family:var(--mono);font-size:11px;line-height:1.3;transform:rotate(-6deg);box-shadow:0 8px 20px -8px rgba(0,0,0,.35)}
+.stamp b{display:block;font-family:var(--display);font-stretch:118%;font-size:22px;color:var(--red)}
+@media (min-width:820px){
+  .hero h1{font-size:54px}
+  .hero-grid{grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);align-items:center;max-width:1040px}
+  .hero .w{max-width:1040px}
+}
+
+/* CENAS */
+.scenes{display:grid;gap:12px;margin-top:26px}
+.scene{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
+.clock{font-family:var(--mono);font-weight:700;font-size:15px;color:var(--panel-ink);background:var(--panel);border-radius:8px;padding:6px 9px;font-variant-numeric:tabular-nums}
+.scene p{font-size:16.5px}
+.scene .q{display:block;margin-top:4px;font-weight:700;color:var(--red-ink)}
+.punch{margin-top:26px;font-family:var(--display);font-stretch:118%;font-weight:850;font-size:clamp(22px,5vw,28px);line-height:1.15}
+.punch span{color:var(--red)}
+
+/* QUIZ */
+.quizwrap{background:var(--panel);color:var(--panel-ink)}
+.quizwrap .tag{color:#FF8A7E}
+.quizwrap h2{color:var(--panel-ink)}
+.quizwrap .lead{color:var(--panel-ink2)}
+.quiz{margin-top:26px;border:1px solid var(--panel-line);border-radius:18px;padding:20px;background:rgba(255,255,255,.03)}
+.qhead{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;color:var(--panel-ink2);letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
+.qbar{display:flex;gap:4px;margin-bottom:18px}
+.qbar i{flex:1;height:5px;border-radius:3px;background:var(--panel-line)}
+.qbar i.ok{background:#3BB07E}.qbar i.no{background:#EE5446}.qbar i.cur{background:var(--panel-ink2)}
+.qtext{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:clamp(20px,4.6vw,24px);line-height:1.22;margin-bottom:16px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;padding:14px 16px;border-radius:12px;border:1.5px solid var(--panel-line);background:transparent;color:var(--panel-ink);font:inherit;font-size:16px;line-height:1.4;cursor:pointer;transition:border-color .15s, background .15s}
+.opt:hover:not([disabled]){border-color:var(--panel-ink2)}
+.opt .l{flex:none;width:26px;height:26px;border-radius:7px;border:1.5px solid var(--panel-ink2);display:grid;place-items:center;font-family:var(--mono);font-size:12px;font-weight:700}
+.opt[disabled]{cursor:default}
+.opt.right{border-color:#3BB07E;background:rgba(59,176,126,.14)}
+.opt.right .l{background:#3BB07E;border-color:#3BB07E;color:#08130D}
+.opt.wrong{border-color:#EE5446;background:rgba(238,84,70,.14)}
+.opt.wrong .l{background:#EE5446;border-color:#EE5446;color:#1A0705}
+.opt.dim{opacity:.5}
+.explain{margin-top:16px;border-radius:12px;padding:14px 16px;background:rgba(255,255,255,.06);font-size:15.5px;line-height:1.5}
+.explain b{display:block;font-family:var(--display);font-stretch:112%;font-size:17px;margin-bottom:4px}
+.explain b.okc{color:#5FD39F}.explain b.noc{color:#FF8A7E}
+.next{margin-top:16px;background:var(--panel-ink);color:var(--panel);box-shadow:0 5px 0 var(--panel-ink2)}
+.final{text-align:center}
+.score{font-family:var(--mono);font-weight:700;font-size:64px;line-height:1;color:var(--panel-ink)}
+.score small{font-size:22px;color:var(--panel-ink2)}
+.final h3{margin:14px 0 8px;font-size:24px;color:var(--panel-ink)}
+.final p{color:var(--panel-ink2);margin-bottom:18px}
+.final .btn{box-shadow:0 6px 0 #7E1C14}
+.quizfoot{margin-top:14px;font-size:13px;color:var(--panel-ink2)}
+
+/* MITO */
+.myth{display:grid;gap:18px;margin-top:24px}
+.bottle{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:center;background:var(--red-soft);border:2px solid var(--red);border-radius:16px;padding:18px}
+.bottle .x{width:56px;height:56px;border-radius:50%;background:var(--red);display:grid;place-items:center;color:var(--on-red)}
+.bottle p{font-size:16.5px}
+.bottle strong{display:block;font-family:var(--display);font-stretch:118%;font-size:21px;line-height:1.15;color:var(--red-ink);margin-bottom:4px}
+.cite{border-left:3px solid var(--ink);padding:4px 0 4px 16px;font-size:16px}
+.cite small{display:block;margin-top:6px;font-size:13px;color:var(--ink2)}
+
+/* NÚMEROS */
+.nums{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:26px}
+.num{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
+.num b{display:block;font-family:var(--display);font-stretch:122%;font-weight:900;font-size:clamp(30px,8vw,40px);line-height:1;color:var(--red);margin-bottom:8px}
+.num p{font-size:14.5px;line-height:1.45;color:var(--ink2)}
+.num p strong{color:var(--ink)}
+.src{margin-top:14px;font-size:12.5px;color:var(--ink2)}
+
+/* SEMÁFORO */
+.lights{display:grid;gap:10px;margin-top:24px}
+.light{display:grid;grid-template-columns:14px minmax(0,1fr);gap:14px;padding:14px 16px;border-radius:14px;background:var(--surface);border:1px solid var(--line)}
+.light i{border-radius:7px}
+.light b{display:block;font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;margin-bottom:3px}
+.light p{font-size:15px;line-height:1.45;color:var(--ink2)}
+.l-red i{background:var(--red)}.l-red b{color:var(--red-ink)}
+.l-amb i{background:var(--amber)}.l-amb b{color:var(--amber)}
+.l-grn i{background:var(--green)}.l-grn b{color:var(--green)}
+
+/* CONTEÚDO */
+.parts{margin-top:24px;border-top:1px solid var(--line)}
+.part{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.part .n{font-family:var(--mono);font-weight:700;font-size:13px;color:var(--red-ink);padding-top:3px}
+.part h3{font-size:18px}
+.part p{font-size:15px;color:var(--ink2);margin-top:2px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px}
+.chips span{font-size:13.5px;font-weight:600;padding:5px 11px;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
+.chips span.hot{border-color:var(--red);color:var(--red-ink)}
+
+/* PRÉVIAS */
+.rail{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 20px 18px;margin:24px -20px 0;scrollbar-width:thin}
+.shot{flex:none;width:210px;scroll-snap-align:start}
+.shot img{width:100%;aspect-ratio:9/16;object-fit:cover;object-position:top;border-radius:16px;border:1px solid var(--line);background:var(--surface);box-shadow:0 14px 30px -18px rgba(20,32,41,.5)}
+.shot.a4{width:250px}.shot.a4 img{aspect-ratio:210/297;border-radius:10px}
+.shot span{display:block;margin-top:9px;font-size:13.5px;font-weight:600;color:var(--ink2)}
+.swipe{font-family:var(--mono);font-size:12px;color:var(--ink2);text-transform:uppercase;letter-spacing:.06em}
+
+/* KIT */
+.kit{display:grid;gap:22px;margin-top:24px}
+.cards12{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;counter-reset:c}
+.cards12 li{list-style:none;display:flex;gap:9px;align-items:center;font-size:14.5px;font-weight:600;padding:10px 12px;background:var(--surface);border:1px solid var(--line);border-radius:10px;counter-increment:c}
+.cards12 li::before{content:counter(c);font-family:var(--mono);font-size:12px;color:var(--on-red);background:var(--red);border-radius:6px;min-width:24px;height:24px;display:grid;place-items:center}
+.cards12{padding:0;margin:0}
+
+/* ANTES/DEPOIS */
+.vs{display:grid;gap:12px;margin-top:24px}
+.col{border-radius:16px;padding:18px}
+.col h3{font-size:17px;font-family:var(--mono);font-stretch:100%;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
+.col ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.col li{display:grid;grid-template-columns:20px minmax(0,1fr);gap:8px;font-size:15.5px;line-height:1.45}
+.col.no{background:var(--surface);border:1px solid var(--line)}
+.col.no h3{color:var(--ink2)}.col.no li::before{content:"✕";color:var(--red);font-weight:700}
+.col.yes{background:var(--green-soft);border:1.5px solid var(--green)}
+.col.yes h3{color:var(--green)}.col.yes li::before{content:"✓";color:var(--green);font-weight:700}
+@media (min-width:700px){.vs{grid-template-columns:1fr 1fr}.kit{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}}
+
+/* AUTOR */
+.author{display:grid;gap:18px;margin-top:22px}
+.mono{width:76px;height:76px;border-radius:20px;background:var(--panel);color:var(--panel-ink);display:grid;place-items:center;font-family:var(--display);font-stretch:122%;font-weight:900;font-size:28px}
+.ahead{display:flex;gap:16px;align-items:center}
+.ahead b{display:block;font-family:var(--display);font-stretch:118%;font-size:22px}
+.ahead span{font-size:14px;color:var(--ink2)}
+.quote{font-family:var(--display);font-stretch:112%;font-weight:700;font-size:20px;line-height:1.3;padding:18px 20px;border-radius:16px;background:var(--panel);color:var(--panel-ink)}
+
+/* OFERTA */
+.offer{background:var(--panel);color:var(--panel-ink)}
+.offer .tag{color:#FF8A7E}
+.ticket{margin-top:22px;background:var(--surface);color:var(--ink);border-radius:20px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.ticket-top{background:var(--red);color:var(--on-red);padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.ticket-body{padding:22px 20px}
+.ticket h3{font-size:24px;margin-bottom:14px}
+.inc{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:10px}
+.inc li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:10px;font-size:16px;line-height:1.45}
+.inc li::before{content:"✓";color:var(--green);font-weight:800}
+.bonus{border:2px dashed var(--amber);background:var(--amber-soft);border-radius:12px;padding:12px 14px;font-size:15px;margin-bottom:20px}
+.bonus b{color:var(--amber)}
+.price{text-align:center;margin-bottom:18px;border-top:1px dashed var(--line);padding-top:18px}
+.price s{color:var(--ink2);font-size:17px}
+.price .big{display:block;font-family:var(--display);font-stretch:122%;font-weight:900;font-size:58px;line-height:1;color:var(--ink);margin:4px 0}
+.price .big small{font-size:26px;vertical-align:.7em;margin-right:4px}
+.price p{font-size:14px;color:var(--ink2)}
+.guar{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:center;margin-top:22px;padding:18px;border:1px solid var(--panel-line);border-radius:16px}
+.seal{width:74px;height:74px;border-radius:50%;border:3px solid var(--panel-ink);display:grid;place-items:center;text-align:center;font-family:var(--mono);font-weight:700;font-size:11px;line-height:1.1}
+.seal b{display:block;font-family:var(--display);font-stretch:122%;font-size:26px}
+.guar p{font-size:15px;color:var(--panel-ink2)}
+.guar p b{color:var(--panel-ink)}
+
+/* FAQ */
+.faq{margin-top:22px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:16px 36px 16px 0;position:relative;font-weight:700;font-size:16.5px;line-height:1.35}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:12px;font-family:var(--mono);font-size:22px;color:var(--red)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 0 16px;font-size:15.5px;color:var(--ink2)}
+
+/* FINAL */
+.closing h2{font-size:clamp(30px,7vw,44px)}
+footer{padding-block:30px 20px;border-top:1px solid var(--line);font-size:13px;color:var(--ink2)}
+footer p+p{margin-top:8px}
+
+/* barra fixa */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surface);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:12px;align-items:center;justify-content:center;box-shadow:0 -10px 30px -18px rgba(0,0,0,.35)}
+.sticky .sp{line-height:1.15}
+.sticky .sp small{display:block;font-size:12px;color:var(--ink2)}
+.sticky .sp s{font-size:12px;color:var(--ink2);margin-right:4px}
+.sticky .sp b{font-family:var(--display);font-stretch:118%;font-size:22px}
+.sticky .btn{width:auto;min-height:50px;font-size:17px;padding:10px 20px;box-shadow:0 4px 0 var(--red-ink)}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"Guia Prático de Primeiros Socorros para Cães e Gatos","description":"Guia para celular e kit de cartões de emergência para tutores: o que fazer em engasgo, intoxicação, convulsão, golpe de calor, RCP e mais de 50 situações até chegar ao veterinário.","image":"https://drviniciusmonay.github.io/primeiros-socorros/img/og.jpg","brand":{"@type":"Person","name":"Dr. Vinicius Monay"},"offers":{"@type":"Offer","price":"29.90","priceCurrency":"BRL","availability":"https://schema.org/InStock","url":"https://drviniciusmonay.github.io/primeiros-socorros/"}}
+</script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="w">
+    <div class="topline"><span class="live"><i></i> Primeiros socorros para cães e gatos</span><span>Atualizado · Diretrizes RECOVER 2026</span></div>
+    <div class="hero-grid">
+      <div>
+        <h1>Nos primeiros minutos de uma emergência, quem está com o seu pet <em>é você.</em></h1>
+        <p class="sub">O <b>Guia Prático de Primeiros Socorros para Cães e Gatos</b> mostra, passo a passo, o que fazer em engasgo, intoxicação, convulsão, golpe de calor e <b>mais de 50 situações</b>, para você agir certo e ganhar tempo até o pronto atendimento veterinário.</p>
+        <div class="badges"><span class="badge">RCP e engasgo</span><span class="badge">Intoxicações</span><span class="badge">Convulsão</span><span class="badge">Golpe de calor</span><span class="badge">Picadas</span></div>
+        <svg class="ecg" viewBox="0 0 600 64" preserveAspectRatio="none" aria-hidden="true">
+          <path class="base" d="M0 34 H170 L182 34 L192 12 L204 56 L214 22 L222 34 H380 L392 34 L402 6 L414 60 L424 20 L432 34 H600" fill="none" stroke-width="2.5" stroke-linejoin="round"/>
+          <path class="beat" d="M0 34 H170 L182 34 L192 12 L204 56 L214 22 L222 34 H380 L392 34 L402 6 L414 60 L424 20 L432 34 H600" fill="none" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+        </svg>
+        <a class="btn" href="#oferta" data-cta>Quero estar preparado</a>
+        <div class="trust"><span><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg> Acesso imediato</span><span><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg> Garantia de 7 dias</span><span><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg> Feito para ler no celular</span></div>
+      </div>
+      <div class="phone" aria-hidden="true">
+        <img src="img/g01.webp" alt="" width="560" height="995">
+        <div class="stamp">mais de<b>50</b>situações</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="w">
+    <span class="tag">Pode acontecer hoje</span>
+    <h2 style="margin-top:12px">Emergência não marca hora. E quase nunca acontece no horário da clínica.</h2>
+    <div class="scenes">
+      <div class="scene"><span class="clock">23:14</span><p>Ele achou o chocolate amargo que ficou em cima da mesa.<span class="q">Você faz ele vomitar ou não?</span></p></div>
+      <div class="scene"><span class="clock">15:02</span><p>Voltou do passeio ofegando, deitou e não quer levantar.<span class="q">Molha com água gelada ou corre para a clínica?</span></p></div>
+      <div class="scene"><span class="clock">02:40</span><p>O gato está há 10 minutos na caixa de areia, fazendo força, e não sai nada.<span class="q">É prisão de ventre ou é emergência?</span></p></div>
+      <div class="scene"><span class="clock">19:37</span><p>Ele caiu de lado, começou a pedalar e a babar.<span class="q">Você coloca a mão na boca para ele não engolir a língua?</span></p></div>
+    </div>
+    <p class="punch">A internet vai te dar dez respostas. <span>Algumas delas pioram a situação.</span></p>
+  </div>
+</section>
+
+<section class="quizwrap" id="teste">
+  <div class="w">
+    <span class="tag">Teste de 1 minuto</span>
+    <h2 style="margin-top:12px">Você saberia agir?</h2>
+    <p class="lead" style="margin-top:12px">6 situações reais. Escolha o que você faria. A resposta certa aparece na hora.</p>
+    <div class="quiz" id="quiz" aria-live="polite"></div>
+    <p class="quizfoot">As respostas seguem as diretrizes RECOVER 2026 de primeiros socorros para cães e gatos e a literatura veterinária atual.</p>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <span class="tag">O mito mais perigoso</span>
+    <h2 style="margin-top:12px">A dica mais famosa da internet está errada</h2>
+    <div class="myth">
+      <div class="bottle">
+        <div class="x"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+        <p><strong>"Deu água oxigenada para ele vomitar."</strong>Ela provoca vômito porque lesa a parede do estômago e do esôfago. Em gatos é ainda mais perigosa. E vomitar pode piorar muito quando o produto é cáustico ou derivado de petróleo.</p>
+      </div>
+      <p class="lead">Em agosto de 2026, especialistas em emergência veterinária publicaram as <b style="color:var(--ink)">primeiras diretrizes baseadas em evidências de primeiros socorros para cães e gatos</b>. Uma das recomendações é direta:</p>
+      <div class="cite">Recomendação forte contra induzir o vômito em casa, de rotina, depois da ingestão de um tóxico. Água oxigenada e xarope de ipeca não são recomendados. O animal deve ser levado ao atendimento imediatamente.<small>RECOVER Guidelines: First Aid for Dogs and Cats. Journal of Veterinary Emergency and Critical Care, 2026.</small></div>
+      <p class="lead">Esse é só um exemplo. O guia foi escrito a partir dessas diretrizes, para você parar de depender de "dica" na hora em que não pode errar.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="w">
+    <span class="tag">Por que se preparar antes</span>
+    <h2 style="margin-top:12px">O perigo quase nunca é o que parece</h2>
+    <div class="nums">
+      <div class="num"><b>74%</b><p>dos casos de golpe de calor em cães aconteceram <strong>durante passeio ou brincadeira</strong>. Só 5% foram em carro fechado.</p></div>
+      <div class="num"><b>3 a 7</b><p>dias é quanto o <strong>raticida</strong> pode levar para dar sinais. Quem espera o sintoma perde o tempo do antídoto.</p></div>
+      <div class="num"><b>1</b><p>comprimido de <strong>paracetamol</strong> pode matar um gato. Remédio de gente não tem dose caseira segura para pets.</p></div>
+      <div class="num"><b>50</b><p>recomendações nas novas <strong>diretrizes de primeiros socorros</strong>, de 2026. O guia segue todas que se aplicam ao tutor.</p></div>
+    </div>
+    <p class="src">Fontes: Hall, Carter e O'Neill, Animals, 2020 (dados de cães atendidos no Reino Unido); RECOVER First Aid Guidelines, 2026; literatura de toxicologia veterinária.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="w">
+    <span class="tag">Dentro do guia</span>
+    <h2 style="margin-top:12px">Em 10 segundos, você sabe se é emergência</h2>
+    <p class="lead" style="margin-top:12px">O semáforo do guia separa o que é para correr agora, o que é para o mesmo dia e o que dá para observar.</p>
+    <div class="lights">
+      <div class="light l-red"><i></i><div><b>VERMELHO · VÁ AGORA</b><p>Respiração difícil, gengiva roxa ou branca, convulsão por mais de 5 minutos, tóxico ingerido, barriga inchando com ânsia sem vomitar, gato sem conseguir fazer xixi.</p></div></div>
+      <div class="light l-amb"><i></i><div><b>AMARELO · VETERINÁRIO HOJE</b><p>Vômito ou diarreia repetidos, mancando sem apoiar a pata, ferida por mordida, uma convulsão com recuperação completa.</p></div></div>
+      <div class="light l-grn"><i></i><div><b>VERDE · OBSERVE E LIGUE</b><p>Um vômito isolado com o pet bem, espirro reverso que passa sozinho, coceira sem ferida.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0" id="conteudo">
+  <div class="w">
+    <span class="tag">Conteúdo completo</span>
+    <h2 style="margin-top:12px">13 partes. Cada emergência com sinais, passo a passo e o que <span style="color:var(--red)">não</span> fazer.</h2>
+    <div class="parts">
+      <div class="part"><span class="n">01</span><div><h3>Prepare-se antes de precisar</h3><p>Contatos, maleta de primeiros socorros e os sinais vitais normais do seu pet.</p></div></div>
+      <div class="part"><span class="n">02</span><div><h3>Os primeiros 60 segundos</h3><p>Segurança, focinheira improvisada, contenção de gatos e transporte sem piorar.</p></div></div>
+      <div class="part"><span class="n">03</span><div><h3>RCP: reanimação cardiopulmonar</h3><p>Onde colocar as mãos em cada formato de peito, ritmo, sopros e quando parar.</p></div></div>
+      <div class="part"><span class="n">04</span><div><h3>Engasgo</h3><p>Manobra de desengasgo em cães e gatos, consciente e desmaiado. Linhas, ossos, baterias e ímãs.</p></div></div>
+      <div class="part"><span class="n">05</span><div><h3>Respiração difícil</h3><p>Braquicefálicos em crise, colapso de traqueia, afogamento, choque elétrico e fumaça.</p></div></div>
+      <div class="part"><span class="n">06</span><div><h3>Golpe de calor e frio</h3><p>Como resfriar do jeito certo, quando parar, patas queimadas no asfalto e hipotermia.</p></div></div>
+      <div class="part"><span class="n">07</span><div><h3>Intoxicações</h3><p>Alimentos, remédios humanos, antipulgas no animal errado, venenos, plantas e sapo-cururu.</p></div></div>
+      <div class="part"><span class="n">08</span><div><h3>Picadas e reações alérgicas</h3><p>Cobra, escorpião, aranha, lagarta, abelha e anafilaxia.</p></div></div>
+      <div class="part"><span class="n">09</span><div><h3>Convulsão e emergências neurológicas</h3><p>Durante e depois da crise, hipoglicemia, hérnia de disco e o gato que arrasta as patas.</p></div></div>
+      <div class="part"><span class="n">10</span><div><h3>Sangramentos, feridas e queimaduras</h3><p>Pressão, torniquete, mordidas, objeto cravado e lesões nos olhos.</p></div></div>
+      <div class="part"><span class="n">11</span><div><h3>Traumas e quedas</h3><p>Atropelamento, gato que caiu da janela, fraturas e choque.</p></div></div>
+      <div class="part"><span class="n">12</span><div><h3>Barriga, xixi e parto</h3><p>Torção gástrica, obstrução urinária, parvovirose, parto complicado e piometra.</p></div></div>
+      <div class="part"><span class="n">13</span><div><h3>Seu plano de ação</h3><p>Checklist de 15 minutos para deixar a casa pronta.</p></div></div>
+    </div>
+    <div class="chips" aria-label="Algumas das situações do guia">
+      <span class="hot">Engasgo</span><span class="hot">Chocolate</span><span class="hot">Xilitol</span><span>Uva e passas</span><span>Cebola e alho</span><span class="hot">Paracetamol</span><span>Anti-inflamatórios</span><span>Minoxidil</span><span>Permetrina no gato</span><span class="hot">Raticida</span><span>Chumbinho</span><span>Lírios</span><span>Espirradeira</span><span>Comigo-ninguém-pode</span><span>Sapo-cururu</span><span class="hot">Escorpião</span><span>Jararaca</span><span>Abelhas</span><span>Anafilaxia</span><span class="hot">Convulsão</span><span>Hipoglicemia</span><span>Hérnia de disco</span><span class="hot">Golpe de calor</span><span>Hipotermia</span><span>Afogamento</span><span>Choque elétrico</span><span>Atropelamento</span><span>Queda de janela</span><span>Fraturas</span><span>Sangramento</span><span>Mordidas</span><span>Queimaduras</span><span>Olho para fora</span><span class="hot">Torção gástrica</span><span class="hot">Gato sem fazer xixi</span><span>Parvovirose</span><span>Parto complicado</span><span>Piometra</span><span>Colapso de traqueia</span><span>Espirro reverso</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="w">
+    <span class="tag">Veja por dentro</span>
+    <h2 style="margin-top:12px">Feito para ler no celular, com ilustrações de cada manobra</h2>
+    <div class="rail" tabindex="0" aria-label="Páginas do guia">
+      <div class="shot"><img src="img/g21.webp" alt="Página do guia com a posição das mãos na RCP para cada formato de peito" width="560" height="995"><span>Onde colocar as mãos na RCP</span></div>
+      <div class="shot"><img src="img/g28.webp" alt="Página do guia sobre tapas nas costas e compressão abdominal no engasgo" width="560" height="995"><span>Manobra de desengasgo</span></div>
+      <div class="shot"><img src="img/g45.webp" alt="Página do guia sobre por que não induzir vômito em casa" width="560" height="995"><span>Intoxicação: o que não fazer</span></div>
+      <div class="shot"><img src="img/g40.webp" alt="Página do guia sobre como resfriar no golpe de calor" width="560" height="995"><span>Golpe de calor, passo a passo</span></div>
+      <div class="shot"><img src="img/g49.webp" alt="Tabela de alimentos tóxicos para cães e gatos" width="560" height="995"><span>Alimentos tóxicos</span></div>
+      <div class="shot"><img src="img/g61.webp" alt="Página do guia sobre o que fazer durante a convulsão" width="560" height="995"><span>Durante a convulsão</span></div>
+      <div class="shot"><img src="img/g05.webp" alt="Sumário clicável do guia" width="560" height="995"><span>Sumário clicável</span></div>
+    </div>
+    <p class="swipe">Deslize para ver mais páginas →</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="w">
+    <span class="tag">Incluso no kit</span>
+    <h2 style="margin-top:12px">Na emergência, ninguém procura PDF. Por isso o guia vem com 12 cartões para imprimir.</h2>
+    <div class="kit">
+      <ol class="cards12">
+        <li>Ficha do pet e contatos</li><li>Sinais vitais</li><li>É emergência? Semáforo</li><li>RCP</li><li>Engasgo</li><li>Golpe de calor</li><li>Intoxicação</li><li>Tóxicos da casa</li><li>Plantas tóxicas</li><li>Convulsão e registro</li><li>Sangramento e transporte</li><li>Checklist da maleta</li>
+      </ol>
+      <div class="rail" style="margin-top:0" tabindex="0" aria-label="Cartões do kit">
+        <div class="shot a4"><img src="img/c03.webp" alt="Cartão do semáforo de emergência" width="700" height="990"><span>Cartão 3 · Semáforo</span></div>
+        <div class="shot a4"><img src="img/c04.webp" alt="Cartão de RCP passo a passo" width="700" height="990"><span>Cartão 4 · RCP</span></div>
+        <div class="shot a4"><img src="img/c07.webp" alt="Cartão de intoxicação" width="700" height="990"><span>Cartão 7 · Intoxicação</span></div>
+        <div class="shot a4"><img src="img/c01.webp" alt="Ficha do pet e contatos de emergência" width="700" height="990"><span>Cartão 1 · Ficha e contatos</span></div>
+      </div>
+    </div>
+    <p class="small" style="margin-top:12px">Cole na geladeira, na maleta e no porta-luvas do carro. Na hora do susto, a resposta está na sua frente.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="w">
+    <span class="tag">O que muda</span>
+    <h2 style="margin-top:12px">Do pânico para o passo a passo</h2>
+    <div class="vs">
+      <div class="col no"><h3>Sem preparo</h3><ul>
+        <li>Você procura no Google com as mãos tremendo</li>
+        <li>Dá água oxigenada porque "todo mundo faz"</li>
+        <li>Coloca a mão na boca do pet em convulsão</li>
+        <li>Espera o sintoma aparecer para ir ao veterinário</li>
+        <li>Não sabe qual clínica está aberta de madrugada</li>
+      </ul></div>
+      <div class="col yes"><h3>Com o guia</h3><ul>
+        <li>Você reconhece a emergência em segundos</li>
+        <li>Sabe o que fazer e, principalmente, o que não fazer</li>
+        <li>Faz a manobra certa para o porte do seu pet</li>
+        <li>Chega ao atendimento mais rápido, com as informações certas</li>
+        <li>Tem os contatos e o plano colados na geladeira</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="w">
+    <span class="tag">Quem escreveu</span>
+    <div class="author">
+      <div class="ahead"><div class="mono" aria-hidden="true">VM</div><div><b>Dr. Vinicius Monay</b><span>Médico Veterinário e Zootecnista · CRMV-SP 54.563</span></div></div>
+      <p>Dr. Vinicius Monay é <b>Médico Veterinário e Zootecnista</b>, pós-graduado em <b>Nutrição de Cães e Gatos</b> e em <b>Perícia Técnica Veterinária</b>. Atende pacientes do mundo todo de forma online e compartilha conteúdos sobre saúde e alimentação no seu perfil do Instagram <a href="https://www.instagram.com/drviniciusmonay/" target="_blank" rel="noopener"><b>@drviniciusmonay</b></a>.</p>
+      <p class="quote">"Nenhum tutor deveria aprender primeiros socorros no meio da emergência. O melhor momento para ler este guia é hoje, com o seu pet dormindo do seu lado."</p>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="oferta">
+  <div class="w">
+    <span class="tag">Acesso imediato</span>
+    <h2 style="margin-top:12px;color:var(--panel-ink)">Prepare-se hoje, pelo preço de um lanche</h2>
+    <div class="ticket">
+      <div class="ticket-top"><span>Kit de primeiros socorros</span><span>Cães e gatos</span></div>
+      <div class="ticket-body">
+        <h3>Guia Prático de Primeiros Socorros para Cães e Gatos</h3>
+        <ul class="inc">
+          <li><span><b>Guia completo no formato de celular:</b> 89 telas, 13 partes, ilustrações das manobras e sumário clicável</span></li>
+          <li><span><b>Kit de 12 cartões de emergência</b> em PDF para imprimir: semáforo, RCP, engasgo, intoxicação, plantas e mais</span></li>
+          <li><span><b>Mais de 50 situações</b>, com sinais, passo a passo e o que não fazer</span></li>
+          <li><span>Baseado nas <b>diretrizes RECOVER 2026</b> de primeiros socorros e <b>2024</b> de RCP</span></li>
+        </ul>
+        <div class="bonus"><b>Bônus:</b> 10% de desconto na Consultoria Nutricional Online com o Dr. Vinicius, válido por 7 dias após a compra.</div>
+        <div class="price">
+          <s>De R$ 67,00</s>
+          <span class="big"><small>R$</small>29,90</span>
+          <p>Pagamento único. Acesso para sempre.</p>
+        </div>
+        <a class="btn" href="#oferta" data-cta>Quero o guia agora</a>
+        <div class="trust"><span><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg> Acesso imediato</span><span><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> Pagamento seguro pela Kiwify</span></div>
+      </div>
+    </div>
+    <div class="guar">
+      <div class="seal"><span><b>7</b>DIAS</span></div>
+      <p><b>Garantia incondicional.</b> Leia, imprima os cartões e, se não fizer sentido para você, peça o reembolso pela Kiwify em até 7 dias. Sem perguntas.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <span class="tag">Perguntas frequentes</span>
+    <h2 style="margin-top:12px">Ficou alguma dúvida?</h2>
+    <div class="faq">
+      <details><summary>O guia substitui o veterinário?</summary><p>Não. Primeiros socorros servem para ganhar tempo até o pronto atendimento. Em todas as situações, o guia mostra o que fazer nos primeiros minutos e quando correr para o veterinário. Diagnóstico e tratamento continuam sendo do veterinário.</p></details>
+      <details><summary>Serve para cães e gatos?</summary><p>Serve. O guia mostra o que muda entre cães e gatos em cada emergência: técnica de RCP por formato de peito, tóxicos que só afetam gatos (como lírio, permetrina e minoxidil), contenção com toalha e as emergências típicas de cada espécie.</p></details>
+      <details><summary>Preciso ter experiência ou estudar muito?</summary><p>Não. O texto é escrito em linguagem de tutor, com passo a passo numerado, ilustrações e caixas de "faça" e "não faça". Dá para ler em uma noite e os cartões resumem o essencial.</p></details>
+      <details><summary>Tem doses de remédio?</summary><p>Não, de propósito. Dar remédio por conta própria em emergência é uma das causas mais comuns de piora. O guia ensina o que nunca dar e quando ligar para o veterinário. Se o seu pet tem uma medicação de resgate prescrita, o guia explica como deixar isso organizado.</p></details>
+      <details><summary>Como eu recebo?</summary><p>O pagamento é processado pela Kiwify. Assim que for confirmado, você recebe por e-mail o guia em PDF para o celular e o kit de cartões para imprimir.</p></details>
+      <details><summary>Tenho mais de um pet. Serve?</summary><p>Serve. O conteúdo vale para todos, e a ficha do pet pode ser impressa quantas vezes você precisar.</p></details>
+      <details><summary>O conteúdo está atualizado?</summary><p>Sim. O guia segue as diretrizes RECOVER de primeiros socorros para cães e gatos, publicadas em agosto de 2026, e as diretrizes RECOVER de RCP de 2024. Onde as diretrizes não chegam, segue a literatura veterinária atual. As referências estão no fim do guia.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Peça o reembolso direto pela Kiwify, sem precisar explicar o motivo.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="closing" style="padding-top:0">
+  <div class="w stack">
+    <h2>Você não escolhe o dia da emergência. <span style="color:var(--red)">Escolhe se vai estar preparado.</span></h2>
+    <p class="lead">Ler o guia leva uma noite. Imprimir os cartões, 5 minutos. A diferença aparece no dia em que você mais precisar.</p>
+    <a class="btn" href="#oferta" data-cta>Quero estar preparado</a>
+    <div class="trust"><span><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg> Acesso imediato</span><span><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg> Garantia de 7 dias</span><span><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg> Feito para ler no celular</span></div>
+  </div>
+</section>
+
+<footer>
+  <div class="w">
+    <p><b>Guia Prático de Primeiros Socorros para Cães e Gatos</b> · Dr. Vinicius Monay · Médico Veterinário · CRMV-SP 54.563 · @drviniciusmonay</p>
+    <p>Este produto é educativo e não substitui a consulta veterinária. Não faz diagnóstico nem prescreve tratamento. Em uma emergência, procure o pronto atendimento veterinário mais próximo.</p>
+    <p>A compra é processada pela Kiwify.</p>
+  </div>
+</footer>
+
+<div class="sticky">
+  <div class="sp"><small>Guia + 12 cartões</small><s>R$ 67</s><b>R$ 29,90</b></div>
+  <a class="btn" href="#oferta" data-cta>Quero o guia</a>
+</div>
+
+<script>
+/* ===== Link do checkout: cole aqui o link da Kiwify quando cadastrar o produto ===== */
+var CHECKOUT = '';
+
+(function(){
+  if (CHECKOUT) {
+    var qs = location.search || '';
+    var url = CHECKOUT + (qs ? (CHECKOUT.indexOf('?') > -1 ? '&' + qs.slice(1) : qs) : '');
+    document.querySelectorAll('[data-cta]').forEach(function(a){ a.href = url; });
+  }
+})();
+
+(function(){
+  var Q = [
+    { q:'Seu cachorro comeu chocolate amargo há 20 minutos e parece bem. O que você faz primeiro?',
+      o:['Dou água oxigenada para ele vomitar','Ligo para o veterinário e vou para o atendimento, mesmo sem sintomas','Dou leite para "cortar" o efeito'],
+      a:1, e:'As diretrizes RECOVER 2026 recomendam não induzir vômito em casa por conta própria. Água oxigenada lesa o estômago, e leite não neutraliza nada. Ligue, informe o peso e a quantidade e vá.' },
+    { q:'Depois do passeio, seu cão está ofegando sem parar, cambaleando e com a gengiva vermelho-tijolo. Como resfriar?',
+      o:['Gelo e água gelada no corpo todo','Água fresca corrente na barriga, ventilação, e depois direto para o veterinário','Não molho nada e levo direto, para não perder tempo'],
+      a:1, e:'Resfriar ali mesmo e só depois transportar é recomendação forte das diretrizes. Água fresca corrente, molhando até a pele, com ênfase na barriga. Gelo prolongado sem medir a temperatura pode passar do ponto.' },
+    { q:'Seu cão está em convulsão: caído de lado, pedalando e babando. O que você faz?',
+      o:['Puxo a língua para ele não engolir','Afasto móveis, mantenho as mãos longe da boca e marco o tempo no relógio','Dou água com açúcar para ele voltar'],
+      a:1, e:'O animal não engole a língua, e a mordida reflexa pode ser grave. Nada pela boca durante a crise. Crise de mais de 5 minutos ou duas seguidas é emergência.' },
+    { q:'Seu cão está engasgado, consciente, em pânico e com pouco ar passando. Primeiro passo?',
+      o:['Enfio o dedo na garganta para puxar o objeto','Até 5 tapas firmes nas costas, na parte de trás do tórax','Dou água para ajudar a descer'],
+      a:1, e:'As diretrizes recomendam começar com até 5 tapas firmes nas costas. Dedo às cegas na garganta pode empurrar o objeto mais fundo. O guia mostra a sequência completa para cada porte.' },
+    { q:'Seu gato lambeu o pólen de um lírio do buquê que estava na mesa. Ele parece normal.',
+      o:['Não comeu a flor, então não tem problema','É emergência: lírio pode causar lesão renal grave em gatos','Dou bastante água e observo por uns dias'],
+      a:1, e:'Para gatos, folha, flor, pólen e até a água do vaso de lírio podem causar lesão renal aguda. Os sinais demoram. Vá ao veterinário mesmo sem sintomas.' },
+    { q:'Seu gato macho vai várias vezes à caixa de areia, faz força e não sai xixi. O que é mais provável?',
+      o:['Prisão de ventre, dá para esperar até amanhã','Pode ser obstrução urinária: é emergência','Estresse, vai passar sozinho'],
+      a:1, e:'Muitos tutores confundem com prisão de ventre e esperam. Gato macho sem conseguir urinar pode morrer em 24 a 72 horas. Vá agora.' }
+  ];
+  var box = document.getElementById('quiz');
+  var i = 0, res = [];
+  var L = ['A','B','C'];
+  function bar(){
+    var h = '<div class="qbar">';
+    for (var k=0;k<Q.length;k++){ h += '<i class="'+(k<res.length?(res[k]?'ok':'no'):(k===i?'cur':''))+'"></i>'; }
+    return h + '</div>';
+  }
+  function show(){
+    var it = Q[i];
+    var h = '<div class="qhead"><span>Situação '+(i+1)+' de '+Q.length+'</span><span>'+res.filter(Boolean).length+' acertos</span></div>' + bar();
+    h += '<p class="qtext">'+it.q+'</p><div class="opts">';
+    it.o.forEach(function(t,k){ h += '<button type="button" class="opt" id="q'+i+'o'+k+'" data-k="'+k+'"><span class="l">'+L[k]+'</span><span>'+t+'</span></button>'; });
+    h += '</div><div id="after"></div>';
+    box.innerHTML = h;
+    box.querySelectorAll('.opt').forEach(function(b){ b.addEventListener('click', pick); });
+  }
+  function pick(ev){
+    var k = +ev.currentTarget.getAttribute('data-k'), it = Q[i], ok = k===it.a;
+    res.push(ok);
+    box.querySelectorAll('.opt').forEach(function(b){
+      var j = +b.getAttribute('data-k'); b.disabled = true;
+      if (j===it.a) b.classList.add('right'); else if (j===k) b.classList.add('wrong'); else b.classList.add('dim');
+    });
+    var last = i===Q.length-1;
+    document.getElementById('after').innerHTML = '<div class="explain"><b class="'+(ok?'okc':'noc')+'">'+(ok?'Isso mesmo.':'Não é bem assim.')+'</b>'+it.e+'</div><button type="button" class="btn next" id="qnext">'+(last?'Ver meu resultado':'Próxima situação')+'</button>';
+    var bh = box.querySelector('.qbar'); if (bh) bh.outerHTML = bar();
+    document.getElementById('qnext').addEventListener('click', function(){ if (last) final(); else { i++; show(); } box.scrollIntoView({block:'nearest'}); });
+  }
+  function final(){
+    var s = res.filter(Boolean).length, t, p;
+    if (s===Q.length){ t='Você foi muito bem.'; p='Acertar no teste, com calma, é uma coisa. Lembrar disso às 2 da manhã, com o coração disparado, é outra. Os cartões do kit existem para esse momento.'; }
+    else if (s>=4){ t='Você sabe bastante, mas errou '+(Q.length-s)+(Q.length-s>1?' situações.':' situação.'); p='Em emergência, um único erro pode custar caro. O guia cobre mais de 50 situações como essas, com o passo a passo certo para cada uma.'; }
+    else { t='Você não está sozinho.'; p='A maioria dos tutores aprendeu primeiros socorros com dicas da internet, e várias delas estão erradas. O guia resolve isso em uma noite de leitura.'; }
+    box.innerHTML = bar() + '<div class="final"><div class="score">'+s+'<small>/'+Q.length+'</small></div><h3>'+t+'</h3><p>'+p+'</p><a class="btn" href="'+(document.querySelector('[data-cta]').getAttribute('href'))+'">Quero o guia completo</a><p style="margin:14px 0 0;font-size:14px"><button type="button" id="qagain" style="background:none;border:0;color:inherit;text-decoration:underline;cursor:pointer;font:inherit">Refazer o teste</button></p></div>';
+    document.getElementById('qagain').addEventListener('click', function(){ i=0; res=[]; show(); });
+  }
+  show();
+})();
+</script>
+</body>
+</html>
