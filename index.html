@@ -549,24 +549,24 @@ var CHECKOUT = '';
 
 (function(){
   var Q = [
-    { q:'Seu cão foi atropelado, levantou sozinho e correu para casa. Ele parece bem. O que você faz?',
-      o:['Se levantou e correu, está tudo bem. Observo em casa','Levo ao veterinário agora, mesmo parecendo bem','Dou um analgésico e vejo como ele acorda amanhã'],
-      a:1, e:'A adrenalina esconde a dor, e as lesões mais perigosas não aparecem por fora: sangramento interno, pulmão machucado, ar no tórax. Elas podem piorar nas horas seguintes. E remédio de gente pode ser tóxico para cães e gatos.' },
-    { q:'Depois do passeio, seu cão está ofegando sem parar, cambaleando e com a gengiva vermelho-tijolo. Como resfriar?',
-      o:['Gelo e água gelada no corpo todo','Água fresca corrente na barriga, ventilação, e depois direto para o veterinário','Não molho nada e levo direto, para não perder tempo'],
-      a:1, e:'Resfriar ali mesmo e só depois transportar é recomendação forte das diretrizes. Água fresca corrente, molhando até a pele, com ênfase na barriga. Gelo prolongado sem medir a temperatura pode passar do ponto.' },
-    { q:'Seu cão está em convulsão: caído de lado, pedalando e babando. O que você faz?',
-      o:['Puxo a língua para ele não engolir','Afasto móveis, mantenho as mãos longe da boca e marco o tempo no relógio','Dou água com açúcar para ele voltar'],
-      a:1, e:'O animal não engole a língua, e a mordida reflexa pode ser grave. Nada pela boca durante a crise. Crise de mais de 5 minutos ou duas seguidas é emergência.' },
-    { q:'Seu cão está engasgado, consciente, em pânico e com pouco ar passando. Primeiro passo?',
-      o:['Enfio o dedo na garganta para puxar o objeto','Até 5 tapas firmes nas costas, na parte de trás do tórax','Dou água para ajudar a descer'],
-      a:1, e:'As diretrizes recomendam começar com até 5 tapas firmes nas costas. Dedo às cegas na garganta pode empurrar o objeto mais fundo. O guia mostra a sequência completa para cada porte.' },
-    { q:'Seu gato lambeu o pólen de um lírio do buquê que estava na mesa. Ele parece normal.',
-      o:['Não comeu a flor, então não tem problema','É emergência: lírio pode causar lesão renal grave em gatos','Dou bastante água e observo por uns dias'],
-      a:1, e:'Para gatos, folha, flor, pólen e até a água do vaso de lírio podem causar lesão renal aguda. Os sinais demoram. Vá ao veterinário mesmo sem sintomas.' },
-    { q:'Seu gato macho vai várias vezes à caixa de areia, faz força e não sai xixi. O que é mais provável?',
-      o:['Prisão de ventre, dá para esperar até amanhã','Pode ser obstrução urinária: é emergência','Estresse, vai passar sozinho'],
-      a:1, e:'Muitos tutores confundem com prisão de ventre e esperam. Gato macho sem conseguir urinar pode morrer em 24 a 72 horas. Vá agora.' }
+    { q:'Seu cão está engasgado, consciente, em pânico e quase sem ar passando. Qual é o primeiro passo?',
+      o:['Faço a manobra de Heimlich, apertando a barriga logo abaixo das costelas','Abro a boca e tento puxar com os dedos o que estiver lá no fundo','Dou até 5 tapas firmes nas costas, na parte de trás do tórax'],
+      a:2, e:'A manobra de Heimlich é a mais famosa, mas não é o primeiro passo. As diretrizes RECOVER 2026 recomendam começar com até 5 tapas firmes nas costas e só depois partir para a compressão abdominal. Dedo às cegas na garganta pode empurrar o objeto mais fundo.' },
+    { q:'Seu cão teve golpe de calor e você está molhando ele com água corrente. Até quando continua?',
+      o:['Até a temperatura retal chegar a uns 39,7 a 40 °C, e então paro','Até a temperatura voltar ao normal, por volta de 38,5 °C','Até ele parar de ofegar, porque é o sinal de que esfriou'],
+      a:0, e:'Parece estranho parar antes do normal, mas é o que recomendam as diretrizes. A temperatura continua caindo depois que você para, e quem resfria até 38,5 °C costuma levar o animal à hipotermia. Depois de resfriar, vá ao veterinário mesmo que ele pareça bem.' },
+    { q:'Seu cão epilético teve uma crise de 2 minutos e voltou ao normal. Duas horas depois, tem outra igual. O que você faz?',
+      o:['Como ele já é epilético, anoto e conto na próxima consulta','Ligo e levo ao veterinário hoje, porque são crises em salva','Dou mais uma dose do remédio que ele já toma todo dia'],
+      a:1, e:'Duas ou mais crises em 24 horas são crises em salva e precisam de avaliação no mesmo dia, mesmo com recuperação entre elas. Dobrar o remédio por conta própria pode intoxicar. Crise de mais de 5 minutos ou sem acordar entre uma e outra é emergência imediata.' },
+    { q:'Seu gato lambeu o pólen de lírio que caiu no pelo dele. Está brincando normalmente. O que você faz?',
+      o:['Limpo o pelo e observo por 24 horas. Se vomitar, levo','Ofereço bastante água e sachê para proteger os rins','Levo ao veterinário agora, mesmo sem nenhum sinal'],
+      a:2, e:'Para gatos, folha, flor, pólen e até a água do vaso de lírio podem causar lesão renal aguda. Os sinais demoram a aparecer, e o tratamento funciona melhor quando começa cedo. Esperar o vômito é perder esse tempo.' },
+    { q:'Você achou a isca de raticida mordida. Seu cão está ótimo, comendo e brincando. O que você faz?',
+      o:['Levo ao veterinário hoje, mesmo ele estando ótimo','Observo por 48 horas. Se nada aparecer, ele não comeu o suficiente','Fico de olho na cor da gengiva durante a semana'],
+      a:0, e:'O raticida mais comum impede a coagulação, e o sangramento só aparece de 3 a 7 dias depois. Existe antídoto, e ele funciona melhor antes dos sinais. Quando a gengiva fica pálida, o cão já está sangrando por dentro.' },
+    { q:'Seu gato macho entra e sai da caixa de areia várias vezes, faz força e sai quase nada. O que é mais provável?',
+      o:['Prisão de ventre. Ofereço sachê e espero até amanhã','Pode ser obstrução urinária. Vou ao veterinário agora','Cistite de estresse. Deixo a casa calma e observo'],
+      a:1, e:'Muitos tutores confundem com prisão de ventre e esperam. No gato macho, a uretra fina pode entupir, e sem conseguir urinar ele pode morrer em 24 a 72 horas. A cistite de estresse é uma causa comum, mas só o veterinário consegue saber se a uretra está livre.' }
   ];
   var box = document.getElementById('quiz');
   var i = 0, res = [];
